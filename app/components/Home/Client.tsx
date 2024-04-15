@@ -10,7 +10,7 @@ export default function Client() {
                 <p className="text-center text-gray-10 text-[40px] font-bold leading-[48px] capitalize mt-6">Discover, Compare, and Hire</p>
                 <p className="text-xl mt-4 text-gray-30">Find Your Perfect Professional with Loggworks</p>
 
-                <div className="my-[72px] w-full h-[674px] bg-gray-500">
+                <div className="my-[72px] w-full h-[674px] bg-gray-300">
                 </div>
             </div>
 

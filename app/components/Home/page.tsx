@@ -3,6 +3,8 @@ import HeroSection from "./HeroSection";
 import Featured from "./Featured";
 import Client from "./Client";
 import Steps from "./Steps";
+import Popular from "./PopularServices";
+import HowItWorks from "./HowItWorks";
 
 export default function HomePage() {
     return (
@@ -12,6 +14,8 @@ export default function HomePage() {
         <Featured />
         <Client />
         <Steps />
+        <Popular />
+        <HowItWorks />
       </>
     );
   }

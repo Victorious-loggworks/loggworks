@@ -5,7 +5,7 @@ import iconTwo from "@/public/assets/steps/step-2.svg";
 import iconThree from "@/public/assets/steps/step-3.svg";
 import { ArrowRight } from "lucide-react";
 
-export default function Steps() {
+export default function HowItWorks() {
     return (
         <div className="px-20">
             <div className="w-full h-[891px] container flex justify-center">
