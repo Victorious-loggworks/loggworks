@@ -44,7 +44,7 @@ export default function Steps() {
                     </div>
 
                     <div className="w-fit absolute bottom-16 right-16">
-                        <span className="px-4 py-3 text-lg text-white bg-secondary-10 rounded-[100px]">For Clients</span>
+                        <span className="px-4 py-3 text-lg text-white bg-secondary-10 rounded-[100px] font-semibold">For Clients</span>
                         <h4 className="text-[32px] text-white mt-6 font-bold">How It Works</h4>
                         <p className="text-white mt-2 text-[18px]">
                             <span className="font-semibold block">Empowering Connections, Simplifying Solutions</span>
