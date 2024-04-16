@@ -7,8 +7,8 @@ import { ArrowRight } from "lucide-react";
 
 export default function Steps() {
     return (
-        <div className="px-20">
-            <div className="w-full h-[891px] container flex justify-center">
+        <div className="px-20 container">
+            <div className="w-full h-[891px] flex justify-center">
                 <div className="relative flex w-fit rounded-lg overflow-hidden">
                     <Image src="/assets/steps/bg-image.png" alt="" width="1240" height="0" className="w-full h-auto" />
 

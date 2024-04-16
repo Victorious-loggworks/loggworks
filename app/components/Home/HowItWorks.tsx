@@ -7,8 +7,8 @@ import { ArrowRight } from "lucide-react";
 
 export default function HowItWorks() {
     return (
-        <div className="px-20">
-            <div className="w-full h-[1026px] container flex justify-center">
+        <div className="px-20 container">
+            <div className="w-full h-[1026px] flex justify-center">
                 <div className="relative flex w-fit rounded-lg overflow-hidden">
                     <Image src="/assets/how-it-works.png" alt="" width="1240" height="0" className="w-full h-auto" />
 
@@ -16,7 +16,7 @@ export default function HowItWorks() {
 
                     <div className="absolute bottom-20 left-16">
                         <div className="grid grid-cols-2 gap-6 ">
-                            <div className="p-8 bg-[#EDE7F8] rounded-[6px] w-[546px]">
+                            <div className="p-8 bg-[#EDE7F8] rounded-[6px] max-w-[546px]">
                                 <div className="flex flex-col">
                                     <h4 className="uppercase text-primary-20 font-bold">Step one</h4>
                                     <div className="h-12 w-12"></div>
@@ -25,7 +25,7 @@ export default function HowItWorks() {
                                 <p className="text-gray-30 text-base">Sign up and showcase your expertise by creating a professional profile. Highlight your skills, display past jobs, and set the stage for clients to find you.</p>
                             </div>
 
-                            <div className="p-8 bg-[#EDE7F8] rounded-[6px] w-[546px]">
+                            <div className="p-8 bg-[#EDE7F8] rounded-[6px] max-w-[546px]">
                                 <div className="flex flex-col">
                                     <h4 className="uppercase text-primary-20 font-bold">Step two</h4>
                                     <div className="h-12 w-12"></div>
@@ -34,7 +34,7 @@ export default function HowItWorks() {
                                 <p className="text-gray-30 text-base">Browse job requests from clients seeking services you offer and select the ones you're interested in.</p>
                             </div>
 
-                            <div className="p-8 bg-[#EDE7F8] rounded-[6px] w-[546px]">
+                            <div className="p-8 bg-[#EDE7F8] rounded-[6px] max-w-[546px]">
                                 <div className="flex flex-col">
                                     <h4 className="uppercase text-primary-20 font-bold">Step three</h4>
                                     <div className="h-12 w-12"></div>
@@ -43,7 +43,7 @@ export default function HowItWorks() {
                                 <p className="text-gray-30 text-base">Provide clients with clear quotes and invoices through Loggworks.</p>
                             </div>
 
-                            <div className="p-8 bg-[#EDE7F8] rounded-[6px] w-[546px]">
+                            <div className="p-8 bg-[#EDE7F8] rounded-[6px] max-w-[546px]">
                                 <div className="flex flex-col">
                                     <h4 className="uppercase text-primary-20 font-bold">Step four</h4>
                                     <div className="h-12 w-12"></div>

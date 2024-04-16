@@ -46,7 +46,7 @@ const imageList = [
 export default function Popular() {
     return (
         <div className="">
-            <div className="container px-5 lg:px-20 pt-10 pb-12 lg:py-[144px]">
+            <div className="container px-5 lg:px-20 pt-10 pb-12">
                 <h2 className="text-xl lg:text-[32px] font-bold text-black">Popular Services</h2>
 
                 <div className="grid grid-cols-4 gap-8 mt-8 lg:mt-12">

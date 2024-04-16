@@ -4,7 +4,7 @@ import Image from "next/image.js";
 
 export default function Client() {
     return (
-        <div className="py-[144px] px-20 container">
+        <div className="px-20 container">
             <div className="flex flex-col items-center">
                 <h2 className="text-primary-20 text-xl uppercase text-center font-semibold">FOR CLIENTS</h2>
                 <p className="text-center text-gray-10 text-[40px] font-bold leading-[48px] capitalize mt-6">Discover, Compare, and Hire</p>
