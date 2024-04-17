@@ -6,10 +6,11 @@ import Image from "next/image";
 import logo from "@/public/assets/logo.png";
 import { MapPin } from "lucide-react";
 import { Search } from "lucide-react";
+import Clients from "./dropdown/Clients";
 
 export default function Navbar() {
   return (
-    <header className="bg-white">
+    <header className="bg-white shadow-sm">
       <nav className="container px-10">
         <div className="flex justify-between items-center py-2">
           <Link
@@ -74,6 +75,8 @@ export default function Navbar() {
             </Button>
           </div>
         </div>
+
+        {/* <Clients /> */}
       </nav>
     </header>
   );
