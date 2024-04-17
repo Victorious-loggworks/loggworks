@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Banner() {
     return (
-        <div className="container px-5 lg:px-20 py-16">
+        <div className="container px-5 lg:px-20">
             <div className="relative flex items-center rounded-xl overflow-hidden bg-[#2E2E2E] h-[464px]">
                 <div className="flex-1 px-5 lg:px-24">
                     <div className="w-1/2">
