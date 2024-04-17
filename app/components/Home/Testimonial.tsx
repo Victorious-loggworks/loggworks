@@ -14,11 +14,14 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 export default function Testimonial() {
     return (
         <div className="bg-primary-90 lg:bg-transparent">
-            <div className="container px-5 lg:px-20 pt-10 pb-8 lg:py-20">
-                <h2 className="text-2xl lg:text-3xl font-bold">We’re trusted by many across the UK</h2>
+            <div className="container px-5 lg:px-20">
+                <div className="text-center">
+                    <h2 className="text-2xl lg:text-[40px] font-bold mb-4 text-gray-10">Join thousand of satisfied Customers</h2>
+                    <p className="text-xl text-gray-30">Hear what customers have to say about Loggworks.</p>
+                </div>
 
                 {/* DESKTOP VIEW */}
-                <div className=" mt-12 hidden lg:block">
+                <div className=" mt-16 hidden lg:block">
                     <Swiper
                         effect={"coverflow"}
                         grabCursor={true}

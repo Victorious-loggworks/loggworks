@@ -7,6 +7,10 @@ import Popular from "./PopularServices";
 import HowItWorks from "./HowItWorks";
 import Spacer from "./Spacer";
 import Testimonial from "./Testimonial";
+import Banner from "./Banner";
+import Blog from "./Blog";
+import BottomBanner from "./BottomBanner";
+import Footer from "./Footer";
 
 export default function HomePage() {
     return (
@@ -23,7 +27,15 @@ export default function HomePage() {
           <Spacer />
         <HowItWorks />
           <Spacer />
-          <Testimonial />
+        <Testimonial />
+          <Spacer />
+        <Banner />
+          <Spacer />
+        <Blog />
+          <Spacer />
+        <BottomBanner />
+          <Spacer />
+          <Footer />
       </>
     );
   }
