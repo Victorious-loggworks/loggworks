@@ -29,6 +29,7 @@ const config = {
         "gray-10": "#2E2E2E",
         "gray-20": "#4B4B4B",
         "gray-30": "#5E5E5E",
+        "gray-40": "#858585",
         "gray-60": "#FEFEFE",
         "gray-70": "#DFDFDF",
         "gray-90": "#F6F6F6",
