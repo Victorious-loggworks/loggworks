@@ -46,7 +46,7 @@ export default function BottomBanner() {
 
           <div className="w-[688px] flex gap-5 pb-8">
             {imageList.map((image) => (
-              <div className="p-2 bg-white rounded-sm">
+              <div key={image.id} className="p-2 bg-white rounded-sm">
                 <div className="w-full">
                   <Image
                     src={image.src}
