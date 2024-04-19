@@ -5,86 +5,42 @@ import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 
-const imageList = [
+const cardList = [
   {
     id: 1,
-    name: "Catering",
-    src: "/assets/dropdown-services/catering.webp",
+    name: "Caterer",
+    src: "/assets/dropdown-pro/caterer.webp",
+    desc: "Serve up your culinary excellence to clients seeking memorable dining experiences.",
   },
   {
     id: 2,
-    name: "Beauty",
-    src: "/assets/dropdown-services/beauty.webp",
+    name: "Beauty Professioinals",
+    src: "/assets/dropdown-pro/beauty-pro.webp",
+    desc: "Bring out the best in clients with your beauty and wellness expertise.",
   },
   {
     id: 3,
-    name: "Cleaning",
-    src: "/assets/dropdown-services/cleaning.webp",
+    name: "Cleaners",
+    src: "/assets/dropdown-pro/cleaners.webp",
+    desc: "Offer your meticulous cleaning services to clients who appreciate a spotless environment.",
   },
   {
     id: 4,
-    name: "Entertainment",
-    src: "/assets/dropdown-services/entertainment.webp",
+    name: "Entertainers",
+    src: "/assets/dropdown-pro/entertainers.webp",
+    desc: "Captivate audiences by matching with clients looking for standout entertainment.",
   },
   {
     id: 5,
-    name: "Appliance Repair",
-    src: "/assets/dropdown-services/appliance-repair.webp",
+    name: "Appliance Repair Specialists",
+    src: "/assets/dropdown-pro/appliance-repair.webp",
+    desc: "Resolve technical issues by connecting with clients needing your repair skills.",
   },
   {
     id: 6,
-    name: "Mobile Mechanic",
-    src: "/assets/dropdown-services/mobile-mechanic.webp",
-  },
-  {
-    id: 7,
-    name: "Personal Assistance",
-    src: "/assets/dropdown-services/personal-assistance.webp",
-  },
-  {
-    id: 8,
-    name: "Pet Grommers",
-    src: "/assets/dropdown-services/pet-groomer.webp",
-  },
-  {
-    id: 1,
-    name: "Catering",
-    src: "/assets/dropdown-services/catering.webp",
-  },
-  {
-    id: 2,
-    name: "Beauty",
-    src: "/assets/dropdown-services/beauty.webp",
-  },
-  {
-    id: 3,
-    name: "Cleaning",
-    src: "/assets/dropdown-services/cleaning.webp",
-  },
-  {
-    id: 4,
-    name: "Entertainment",
-    src: "/assets/dropdown-services/entertainment.webp",
-  },
-  {
-    id: 5,
-    name: "Appliance Repair",
-    src: "/assets/dropdown-services/appliance-repair.webp",
-  },
-  {
-    id: 6,
-    name: "Mobile Mechanic",
-    src: "/assets/dropdown-services/mobile-mechanic.webp",
-  },
-  {
-    id: 7,
-    name: "Personal Assistance",
-    src: "/assets/dropdown-services/personal-assistance.webp",
-  },
-  {
-    id: 8,
-    name: "Pet Grommers",
-    src: "/assets/dropdown-services/pet-groomer.webp",
+    name: "Mobile Mechanics",
+    src: "/assets/dropdown-pro/mechanic.webp",
+    desc: "Keep clients on the move by providing your expert automotive repair services.",
   },
 ];
 
@@ -109,10 +65,11 @@ const ClientDropDown: React.FC = () => {
             <div className="flex flex-col gap-3 mt-6 tracking-wide">
               <Button
                 className={`flex justify-between gap-2 py-10 px-6 rounded-md w-full ${
-                  activeBox === 'box1' ? 'bg-gray-90 hover:bg-gray-90' : 'bg-transparent text-white'
+                  activeBox === "box1"
+                    ? "bg-gray-90 hover:bg-gray-90"
+                    : "bg-transparent text-white"
                 }`}
                 onClick={() => handleToggle("box1")}
-                
               >
                 <div className="flex">
                   <div className="flex items-end h-full">
@@ -230,9 +187,7 @@ const ClientDropDown: React.FC = () => {
                       />
                     </div>
                     <div className="flex flex-col items-start gap-1">
-                      <p className="text-base font-bold text-gray-10">
-                        Log In
-                      </p>
+                      <p className="text-base font-bold text-gray-10">Log In</p>
                       <p className="text-[12px] font-medium text-gray-30">
                         Welcome back! Log in your Loggworks account
                       </p>
@@ -248,94 +203,86 @@ const ClientDropDown: React.FC = () => {
 
           {activeBox === "box2" && (
             <div className="w-[68%] py-12 pl-12 pr-16 bg-gray-90">
-              <div className="flex justify-between items-center  h-[85%] w-full">
-                <div>
+              <div className="grid grid-cols-3 gap-6 mt-12">
+                {cardList.map((card) => (
+                  <div className="bg-white rounded-sm overflow-hidden shadow-lg">
+                    <Image
+                      src={card.src}
+                      width={248}
+                      height={88}
+                      alt=""
+                      className="w-full h-24"
+                    />
+                    <div className="px-4 py-4">
+                      <div className="">
+                        <h4 className="text-sm mb-1 font-bold text-gray-10 leading-6">
+                          {card.name}
+                        </h4>
+                        <p className="text-gray-20 text-[8px]">{card.desc}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {activeBox === "box3" && (
+            <div className="w-[68%] py-12 pl-12 pr-16 bg-gray-90">
+              <div className="flex justify-between items-center gap-16  h-[85%] w-full">
+                <div className="rounded-lg w-1/2 h-64 overflow-hidden relative">
                   <Image
-                    src={"/assets/dropdown/search-job.svg"}
-                    alt="clients"
-                    width={135}
-                    height={119}
-                    className="h-[119px] w-[135px]"
+                    src={"/assets/dropdown-pro/pay-lady.webp"}
+                    alt="payment image"
+                    width={351}
+                    height={274}
+                    className="absolute inset-0 h-full w-full object-cover"
                   />
-                  <p className="text-center text-gray-10 text-opacity-95 text-[20px] font-bold leading-6 mt-2">
-                    Search or <br /> post a job
-                  </p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#000000] to-[#202020] opacity-50"></div>
+                  <div className="absolute text-white px-6 pt-10">
+                    <p className="text-2xl font-bold">PayG</p>
+                    <p className="text-base mt-3 mb-10">
+                      For users on a project-by-project <br />
+                      basis
+                    </p>
+                    <div className="flex gap-3 items-center">
+                      <span className="text-5xl font-bold">15%</span>
+                      <span className="text-base">
+                        pay as you go <br />
+                        per commission
+                      </span>
+                    </div>
+                  </div>
                 </div>
 
-                <Image
-                  src={"/assets/dropdown/arrow.svg"}
-                  alt="arrow"
-                  width={166.715}
-                  height={39.492}
-                  className=""
-                />
-
-                <div>
+                <div className="rounded-lg w-1/2 h-64 overflow-hidden relative">
                   <Image
-                    src={"/assets/dropdown/get-quotes.svg"}
-                    alt="clients"
-                    width={135}
-                    height={119}
-                    className="h-[119px] w-[135px]"
+                    src={"/assets/dropdown-pro/pay-lady.webp"}
+                    alt="payment image"
+                    width={351}
+                    height={274}
+                    className="absolute inset-0 h-full w-full object-cover"
                   />
-                  <p className="text-center text-gray-10 text-opacity-95 text-[20px] font-bold leading-6 mt-2">
-                    Get Free <br /> Quotes
-                  </p>
-                </div>
-
-                <Image
-                  src={"/assets/dropdown/arrow.svg"}
-                  alt="arrow"
-                  width={166.715}
-                  height={39.492}
-                  className=""
-                />
-                <div>
-                  <Image
-                    src={"/assets/dropdown/rate-and-review.svg"}
-                    alt="clients"
-                    width={135}
-                    height={119}
-                    className="h-[119px] w-[135px]"
-                  />
-                  <p className="text-center text-gray-10 text-opacity-95 text-[20px] font-bold leading-6 mt-2">
-                    Rate And <br /> Review
-                  </p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#000000] to-[#202020] opacity-50"></div>
+                  <div className="absolute text-white px-6 pt-10">
+                    <p className="text-2xl font-bold">PayG</p>
+                    <p className="text-base mt-3 mb-10">
+                      For users on a project-by-project <br/>basis
+                    </p>
+                    <div className="flex gap-3 items-center">
+                      <span className="text-5xl font-bold">15%</span>
+                      <span className="text-base">
+                        pay as you go <br />
+                        per commission
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
 
               <Button className="text-gray-10 font-bold">
                 Learn more <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
-            </div>
-          )}
-
-          {activeBox === "box3" && (
-            <div className="w-[68%] py-12 pl-12 pr-16 bg-gray-90">
-              <div className="grid grid-cols-4 gap-5 gap-x-8">
-                {imageList.map((image) => (
-                  <div
-                    key={image.id}
-                    className="relative flex w-full h-auto rounded-lg overflow-hidden"
-                  >
-                    <Image
-                      src={image.src}
-                      alt={image.name}
-                      width={168}
-                      height={88}
-                      className="objecct-cover w-full h-24"
-                      priority
-                    />
-
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent h-[50px]"></div>
-
-                    <div className="text-white text-[12px] absolute bottom-2 flex w-full items-center font-semibold left-2">
-                      {image.name}
-                      <ArrowRight className="text-white pl-2 w-5 h-5" />
-                    </div>
-                  </div>
-                ))}
-              </div>
             </div>
           )}
         </div>
