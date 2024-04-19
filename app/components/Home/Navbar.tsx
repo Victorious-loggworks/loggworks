@@ -76,7 +76,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        <Clients />
+        {/* <Clients /> */}
       </nav>
     </header>
   );
