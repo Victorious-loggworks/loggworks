@@ -162,7 +162,7 @@ const ResourcesDropDown: React.FC = () => {
                 </p>
                 <div className="flex flex-col gap-3 mt-6 tracking-wide">
                   {blogList.slice(0,4).map((blogList) => (
-                    <Button className="flex gap-2 py-10 px-6 rounded-md w-fit bg-gray-90">
+                    <Button key={blogList.id} className="flex gap-2 py-10 px-6 rounded-md w-fit bg-gray-90">
                       <div className="flex items-end h-full">
                         <Image
                           src={blogList.src}
@@ -191,7 +191,7 @@ const ResourcesDropDown: React.FC = () => {
                 </p>
                 <div className="flex flex-col gap-3 mt-6 tracking-wide ">
                   {blogList.slice(4).map((blogList) => (
-                    <Button className="flex gap-2 py-10 px-6 rounded-md w-fit ">
+                    <Button key={blogList.id} className="flex gap-2 py-10 px-6 rounded-md w-fit ">
                       <div className="flex items-end h-full">
                         <Image
                           src={blogList.src}
@@ -219,7 +219,7 @@ const ResourcesDropDown: React.FC = () => {
             <div className="w-[68%] py-12 pl-12 pr-16 bg-gray-90">
               <div className="grid grid-cols-3 gap-6 mt-12">
                 {cardList.map((card) => (
-                  <div className="bg-white rounded-sm overflow-hidden shadow-lg">
+                  <div key={card.id} className="bg-white rounded-sm overflow-hidden shadow-lg">
                     <Image
                       src={card.src}
                       width={248}

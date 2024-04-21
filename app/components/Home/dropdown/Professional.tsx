@@ -206,7 +206,7 @@ const ProfessionalDropDown: React.FC = () => {
             <div className="w-[68%] py-12 pl-12 pr-16 bg-gray-90">
               <div className="grid grid-cols-3 gap-6 mt-12">
                 {cardList.map((card) => (
-                  <div className="bg-white rounded-sm overflow-hidden shadow-lg">
+                  <div key={card.id} className="bg-white rounded-sm overflow-hidden shadow-lg">
                     <Image
                       src={card.src}
                       width={248}
