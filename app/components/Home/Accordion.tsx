@@ -85,42 +85,15 @@ export function AccordianItem({
   const open = selected === value;
   const ref = useRef<HTMLDivElement>(null);
 
-//   return (
-//     <li className="" {...props}>
-//       <header
-//         role="button"
-//         onClick={() => setSelected(open ? null : value)}
-//         className={`flex gap-3 items-center py-8 ${
-//           open
-//             ? " text-xl text-primary-20 font-medium"
-//             : "text-gray-40 text-[20px] font-medium capitalize"
-//         }`}
-//       >
-//         <Image
-//           src={`/assets/operations-icon/${imageName}`}
-//           alt="icon"
-//           width={32}
-//           height={32}
-//         />
-//         {trigger}
-//       </header>
-//       <div
-//         className={`overflow-y-auto transition duration-300 ease-in-out ${
-//           open ? "max-h-full" : "max-h-0"
-//         }`}
-//         ref={ref}
-//       >
-//         <div className="pb-4">{children}</div>
-//       </div>
-//     </li>
-//   );
-return (
-    <li className="" {...props}>
+  return (
+    <li className="border-b border-gray-300" {...props}>
       <header
         role="button"
         onClick={() => setSelected(open ? null : value)}
-        className={`flex gap-3 items-center py-8 transition duration-800 ease-in-out ${
-          open ? "text-xl text-primary-20 font-medium" : "text-gray-40 text-[20px] font-medium capitalize"
+        className={`flex gap-3 items-center py-8 ${
+          open
+            ? " text-xl text-primary-20 font-medium"
+            : "text-gray-40 text-[20px] font-medium capitalize"
         }`}
       >
         <Image
@@ -132,13 +105,16 @@ return (
         {trigger}
       </header>
       <div
-        className={`overflow-y-auto ${open ? 'max-h-full' : 'max-h-0'}`}
+        className={`overflow-y-auto transition duration-300 ease-in-out ${
+          open ? "max-h-full" : "max-h-0"
+        }`}
         ref={ref}
       >
-        <div className="pb-4">{children}</div>
+        <div className="pb-8">{children}</div>
       </div>
     </li>
   );
+
 }
 
 export default Accordion;

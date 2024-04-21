@@ -16,7 +16,7 @@ export default function Operations() {
         </p>
       </div>
       <div className="mt-16 flex gap-8">
-        <div className="w-[713px] h-[915px] bg-gray-200 rounded-lg "></div>
+        <div className="w-[713px] h-[815px] bg-gray-200 rounded-lg "></div>
         <main className="flex flex-col mb-10 w-[40%] pl-8">
                 <Accordian value={defaultValue} className="">
                     <AccordianItem value="1" trigger="Efficient Job Management" imageName="icon-1.svg">
