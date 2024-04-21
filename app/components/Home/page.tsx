@@ -11,6 +11,7 @@ import Banner from "./Banner";
 import Blog from "./Blog";
 import BottomBanner from "./BottomBanner";
 import Footer from "./Footer";
+import Operations from "./Operations";
 
 export default function HomePage() {
     return (
@@ -24,6 +25,8 @@ export default function HomePage() {
         <Steps />
           <Spacer />
         <Popular />
+          <Spacer />
+        <Operations />
           <Spacer />
         <HowItWorks />
           <Spacer />

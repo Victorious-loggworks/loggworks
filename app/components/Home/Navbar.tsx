@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { Clipboard } from "lucide-react";
 import { ChevronDown } from "lucide-react";
@@ -6,9 +8,18 @@ import Image from "next/image";
 import logo from "@/public/assets/logo.png";
 import { MapPin } from "lucide-react";
 import { Search } from "lucide-react";
-import Clients from "./dropdown/Clients";
+import ClientDropDown from "./dropdown/Clients";
+import ProfessionalDropDown from "./dropdown/Professional";
+import ResourcesDropDown from "./dropdown/Resources";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [activeMenu, setActiveMenu] = useState<string | null>(null); 
+
+  const handleToggle = (menuItem: string) => {
+    setActiveMenu(menuItem === activeMenu ? null : menuItem);
+  };
+
   return (
     <header className="bg-white shadow-sm">
       <nav className="container px-10">
@@ -50,20 +61,29 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center gap-6 h-16 text-gray-10">
-            <Link href={"/"} className="text-base font-medium flex items-center">
+            <Button
+              className="text-base p-0 text-gray-10 font-medium flex items-center"
+              onClick={() => handleToggle("menuItem1")}
+            >
               <p>For Clients</p>
               <ChevronDown className="inline-block ml-2 w-4" />
-            </Link>
+            </Button>
 
-            <Link href={"/"} className="text-base font-medium flex items-center">
+            <Button
+              className="text-base p-0 text-gray-10 font-medium flex items-center"
+              onClick={() => handleToggle("menuItem2")}
+            >
               <p>For Professionals</p>
               <ChevronDown className="inline-block ml-2 w-4" />
-            </Link>
+            </Button>
 
-            <Link href={"/"} className="text-base font-medium flex items-center">
-                <p>Resources</p>
+            <Button
+              className="text-base p-0 text-gray-10 font-medium flex items-center"
+              onClick={() => handleToggle("menuItem3")}
+            >
+              <p>Resources</p>
               <ChevronDown className="inline-block ml-2 w-4" />
-            </Link>
+            </Button>
           </div>
 
           <div className="flex gap-3">
@@ -76,7 +96,11 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* <Clients /> */}
+        {activeMenu === "menuItem1" && <ClientDropDown />}
+
+        {activeMenu === "menuItem2" && <ProfessionalDropDown />}
+        {activeMenu === "menuItem3" && <ResourcesDropDown />}
+        
       </nav>
     </header>
   );

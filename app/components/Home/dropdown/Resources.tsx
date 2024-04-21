@@ -46,7 +46,7 @@ const cardList = [
   },
 ];
 
-const ClientDropDown: React.FC = () => {
+const ResourcesDropDown: React.FC = () => {
   const [activeBox, setActiveBox] = useState<"box1" | "box2" | "box3" | null>(
     "box1"
   );
@@ -58,9 +58,9 @@ const ClientDropDown: React.FC = () => {
   };
 
   return (
-    <div className="absolute top-8 w-full">
+    <div className="absolute">
       <div className="container">
-        <div className="flex rounded-md overflow-hidden shadow-md max-h-[600px] overflow-y-auto">
+        <div className="flex rounded-md w-[1260px] shadow-md max-h-[600px]">
           {/* left side */}
           <div className="bg-white w-[32%] py-12 px-6">
             <p className="text-[12px] font-medium text-gray-30">FOR CLIENTS</p>
@@ -154,7 +154,7 @@ const ClientDropDown: React.FC = () => {
 
           {/* right side */}
           {activeBox === "box1" && (
-            <div className="bg-gray-90 w-[68%] h-full py-12 pl-12 pr-16 flex justify-between">
+            <div className="bg-gray-90 w-[68%] max-h-[600px] py-12 pl-12 pr-16 flex justify-between overflow-hidden overflow-y-auto">
               {/* FOR CLIENTS */}
               <div>
                 <p className="text-[12px] font-medium text-gray-30">
@@ -309,4 +309,4 @@ const ClientDropDown: React.FC = () => {
   );
 };
 
-export default ClientDropDown;
+export default ResourcesDropDown;
