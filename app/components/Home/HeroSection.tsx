@@ -12,8 +12,8 @@ export default function HeroSection() {
                 <p className="text-xl text-gray-30 max-w-md text-center mt-6">Connect Seamlessly with Vetted Professionals for All Your Home Service Needs</p>
 
                 <div className="flex gap-3 mt-8">
-                    <Button className="bg-primary-20 hover:bg-primary-20 py-3 px-5 rounded-md">Post a Job For Free</Button>
-                    <Button className="bg-white hover:bg-transparent text-primary-20 border-primary-20 border py-3 px-5 rounded-lg">Join as a Pro</Button>
+                    <Button className="bg-primary-20 hover:bg-primary-20 py-6 px-5 rounded-md">Post a Job For Free</Button>
+                    <Button className="bg-white hover:bg-transparent text-primary-20 border-primary-20 border py-6 px-5 rounded-lg">Join as a Pro</Button>
                 </div>
 
                 <div className="my-14 h-[684px] w-full bg-slate-300"></div>

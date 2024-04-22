@@ -31,7 +31,7 @@ const SearchList = [
 
 export default function Promotion() {
   return (
-    <div className="container px-10">
+    <div className="container px-20">
       <div className="flex items-center gap-3 mt-16">
         <h3 className="text-black text-xl font-semibold">Promotions</h3>
         <span className="text-white bg-[#E2B801] px-1 rounded-sm">Ads</span>

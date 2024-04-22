@@ -40,7 +40,7 @@ export default function BottomBanner() {
             Find the Best Jobs <br />
             In Your Field
           </h4>
-          <Button variant="default" className="bg-primary-20 w-fit mb-9">
+          <Button variant="default" className="bg-primary-20 w-fit mb-9 py-6 px-5">
             Join as a Pro
           </Button>
 
@@ -70,7 +70,7 @@ export default function BottomBanner() {
               Find the Best Home <br />
               Service Professionals
             </h4>
-            <Button variant="default" className="bg-primary-20 w-fit mb-9">
+            <Button variant="default" className="bg-primary-20 w-fit mb-9 py-6 px-5">
               Post a Job For Free
             </Button>
           </div>

@@ -31,7 +31,7 @@ const SearchList = [
 
 export default function DealsOffer() {
   return (
-    <div className="container px-10">
+    <div className="container px-20">
       <div className="flex items-center gap-3 mt-16">
         <h3 className="text-black text-xl font-semibold">Deals and offer</h3>
       </div>
@@ -76,7 +76,13 @@ export default function DealsOffer() {
                   {searchCard.categoryTwo}
                 </p>
               </div>
-              <div className="flex justify-between items-center"></div>
+              <div className="flex justify-between items-center text-sm">
+                <p className="text-gray-10">Get <span className="text-primary-20 semibold">20%</span> off 5 weeks booking</p>
+                <p className="text-red-700 font-semibold">
+                  <span className="mr-2">Ends in:</span>
+                  <span>04:34:40</span>
+                </p>
+              </div>
               <Button className="w-full py-3 text-primary-20 border border-primary-20 rounded-md">
                 Request Quote
               </Button>

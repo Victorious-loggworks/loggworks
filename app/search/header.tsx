@@ -21,7 +21,7 @@ export default function SearchHeader() {
     <div>
       <Navbar />
       <Spacer />
-      <div className="container px-10">
+      <div className="container px-20">
         <Breadcrumb className="mb-8">
           <BreadcrumbList>
             <BreadcrumbItem className="uppercase font-mediun text-base text-gray-10 text-opacity-90 font-medium">
