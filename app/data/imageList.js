@@ -42,7 +42,7 @@ const imageList = [
   {
     id: 9,
     name: "Caterer",
-    src: "/assets/bottom-banner/caterer.webp",
+    src: "/assets/bannerImage/caterer.webp",
   },
   {
     id: 10,

@@ -29,7 +29,7 @@ export default function BottomBanner() {
 
         <div className="w-1/2 relative flex h-full gap-12 justify-center overflow-hidden">
           <div className=" absolute left-0 -top-16 h-[688px] flex flex-col gap-5">
-            {ImageList.map((image) => (
+            {ImageList.slice(0,3).map((image) => (
               <div key={image.id} className="p-1 w-fit bg-white rounded-sm">
                 <div className="w-full">
                   <Image
@@ -48,7 +48,7 @@ export default function BottomBanner() {
           </div>
 
           <div className=" absolute -top-4 left-[9.2rem] h-[688px] flex flex-col gap-5">
-            {ImageList.map((image) => (
+            {ImageList.slice(3,6).map((image) => (
               <div key={image.id} className="p-1 w-fit bg-white rounded-sm">
                 <div className="w-full">
                   <Image
@@ -67,7 +67,7 @@ export default function BottomBanner() {
           </div>
 
           <div className=" absolute -top-24 right-[11rem] h-[688px] flex flex-col gap-5">
-            {ImageList.map((image) => (
+            {ImageList.slice(6,9).map((image) => (
               <div key={image.id} className="p-1 w-fit bg-white rounded-sm">
                 <div className="w-full">
                   <Image
@@ -86,7 +86,7 @@ export default function BottomBanner() {
           </div>
 
           <div className=" absolute -top-8 right-[1.8rem] h-[688px] flex flex-col gap-5">
-            {ImageList.map((image) => (
+            {ImageList.slice(9,12).map((image) => (
               <div key={image.id} className="p-1 w-fit bg-white rounded-sm">
                 <div className="w-full rounded-sm overflow-hidden">
                   <Image
