@@ -13,7 +13,7 @@ export default function HeroSection() {
 
                 <div className="flex gap-3 mt-8">
                     <Button className="bg-primary-20 hover:bg-primary-20 py-6 px-5 rounded-md">Post a Job For Free</Button>
-                    <Button className="bg-white hover:bg-transparent text-primary-20 border-primary-20 border py-6 px-5 rounded-lg">Join as a Pro</Button>
+                    <Button className="bg-white hover:bg-transparent text-primary-20 border-primary-20 border-opacity-70 border py-6 px-5 rounded-lg">Join as a Pro</Button>
                 </div>
 
                 <div className="my-14 h-[684px] w-full bg-slate-300"></div>

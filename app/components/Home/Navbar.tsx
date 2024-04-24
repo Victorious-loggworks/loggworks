@@ -14,7 +14,7 @@ import ResourcesDropDown from "./dropdown/Resources";
 import { useState } from "react";
 
 export default function Navbar() {
-  const [activeMenu, setActiveMenu] = useState<string | null>(null); 
+  const [activeMenu, setActiveMenu] = useState<string | null>(null);
 
   const handleToggle = (menuItem: string) => {
     setActiveMenu(menuItem === activeMenu ? null : menuItem);
@@ -88,10 +88,10 @@ export default function Navbar() {
 
           <div className="flex gap-3">
             <Button className="bg-white hover:bg-transparent text-gray-30 font-medium border-primary-20 py-3 px-5 rounded-lg">
-              Post a Job
+              Log In
             </Button>
             <Button className="bg-primary-20 hover:bg-primary-20 py-3 px-5 rounded-md">
-              Log In
+              Post a Job
             </Button>
           </div>
         </div>
@@ -100,7 +100,6 @@ export default function Navbar() {
 
         {activeMenu === "menuItem2" && <ProfessionalDropDown />}
         {activeMenu === "menuItem3" && <ResourcesDropDown />}
-        
       </nav>
     </header>
   );
