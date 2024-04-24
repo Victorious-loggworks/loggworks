@@ -9,7 +9,7 @@ export default function Banner() {
     <div className="container px-5 lg:px-20">
       <div className="relative flex items-center gap-8 justify-between rounded-xl overflow-hidden bg-gray-10 bg-opacity-90 h-[464px]">
         <div className="px-5 lg:pl-20 w-1/2">
-          <div className="w-">
+          <div className="">
             <h2 className="text-2xl lg:text-[32px] leading-[38.4px] font-bold text-white mb-4">
               Find the Best Home Service
               <br />Professionals On Loggworks
