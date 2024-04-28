@@ -15,7 +15,7 @@ export default function Steps() {
             alt=""
             width="1240"
             height="0"
-            className="w-full h-full object-cover bg-right absolute"
+            className="w-full h-full object-cover bg-center absolute"
           />
 
           <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-10 from-45%  via-gray-10 via-30% to-transparent h-full lg:h-[400px]"></div>
@@ -27,7 +27,13 @@ export default function Steps() {
                   <h4 className="uppercase text-secondary-10 font-bold">
                     Step one
                   </h4>
-                  <Image src={iconOne} alt={"Search icon"} width={48} height={48} className="h-10 w-10 lg:h-12 lg:w-12" />
+                  <Image
+                    src={iconOne}
+                    alt={"Search icon"}
+                    width={48}
+                    height={48}
+                    className="h-10 w-10 lg:h-12 lg:w-12"
+                  />
                 </div>
                 <h5 className="text-2xl font-bold my-2">
                   Search or Post a Job
@@ -44,7 +50,13 @@ export default function Steps() {
                   <h4 className="uppercase text-secondary-10 font-bold">
                     Step two
                   </h4>
-                  <Image src={iconTwo} alt={"Search icon"} width={48} height={48} className="h-10 w-10 lg:h-12 lg:w-12"/>
+                  <Image
+                    src={iconTwo}
+                    alt={"Search icon"}
+                    width={48}
+                    height={48}
+                    className="h-10 w-10 lg:h-12 lg:w-12"
+                  />
                 </div>
                 <h5 className="text-2xl font-bold my-2">Get Free Quotes</h5>
                 <p className="text-gray-30 text-base">
@@ -58,7 +70,13 @@ export default function Steps() {
                   <h4 className="uppercase text-secondary-10 font-bold">
                     Step three
                   </h4>
-                  <Image src={iconThree} alt={"Search icon"} width={58} height={58} className="h-10 w-10 lg:h-12 lg:w-12"/>
+                  <Image
+                    src={iconThree}
+                    alt={"Search icon"}
+                    width={58}
+                    height={58}
+                    className="h-10 w-10 lg:h-12 lg:w-12"
+                  />
                 </div>
                 <h5 className="text-2xl font-bold my-2">Rate and review</h5>
                 <p className="text-gray-30 text-base">
@@ -74,10 +92,10 @@ export default function Steps() {
                 <span className="px-4 py-3 text-lg text-white bg-secondary-10 rounded-[100px] font-semibold">
                   For Clients
                 </span>
-                <h4 className="text-[32px] text-white mt-6 font-bold">
+                <h4 className="text-[2rem] text-white mt-6 font-bold">
                   How It Works
                 </h4>
-                <p className="text-white mt-2 text-[18px]">
+                <p className="text-white mt-2 text-[1.125rem]">
                   <span className="font-semibold block">
                     Empowering Connections, Simplifying Solutions
                   </span>

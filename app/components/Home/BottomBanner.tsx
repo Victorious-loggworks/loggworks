@@ -33,10 +33,10 @@ const imageList = [
 
 export default function BottomBanner() {
   return (
-    <div className="px-20 container">
-      <div className="grid grid-cols-2 gap-6">
-        <div className="rounded-2xl pt-16 flex flex-col items-center bg-gray-10 bg-opacity-90 overflow-hidden">
-          <h4 className="text-white text-center text-3xl font-bold mb-5">
+    <div className="px-5 lg:px-20 container">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="rounded-2xl pt-8 lg:pt-16 flex flex-col items-center bg-gray-10 bg-opacity-90 overflow-hidden">
+          <h4 className="text-white text-center text-xl lg:text-3xl font-bold mb-5">
             Find the Best Jobs <br />
             In Your Field
           </h4>
@@ -64,7 +64,7 @@ export default function BottomBanner() {
           </div>
         </div>
 
-        <div className="rounded-2xl pt-16 bg-gray-10 bg-opacity-90 overflow-hidden flex items-center flex-col">
+        <div className="rounded-2xl pt-16 bg-gray-10 bg-opacity-90 overflow-hidden hidden lg:flex items-center flex-col">
           <div className="h-1/2 flex flex-col items-center">
             <h4 className="text-white text-center text-3xl font-bold mb-5">
               Find the Best Home <br />

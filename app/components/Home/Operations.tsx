@@ -17,7 +17,7 @@ export default function Operations() {
       </div>
       <div className="mt-16 flex flex-col lg:flex-row gap-8">
         <div className="w-full lg:w-[713px] h-[388px] lg:h-[815px] bg-gray-200 rounded-lg "></div>
-        <main className="flex flex-col mb-10 lg:w-[40%] pl-8">
+        <main className="flex flex-col mb-10 lg:w-[40%] lg:pl-8">
                 <Accordian value={defaultValue} className="">
                     <AccordianItem value="1" trigger="Efficient Job Management" imageName="icon-1.svg">
                         <h4 className="text-[32px] font-bold mt-2 text-gray-10 text-opacity-90">Streamline Operations</h4>

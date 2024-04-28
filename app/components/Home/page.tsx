@@ -12,6 +12,7 @@ import Blog from "./Blog";
 import BottomBanner from "./BottomBanner";
 import Footer from "./Footer";
 import Operations from "./Operations";
+import FooterMobile from "./MobileFooter";
 // import StepsTwo from "./StepsTwo";
 
 export default function HomePage() {
@@ -41,6 +42,7 @@ export default function HomePage() {
         <BottomBanner />
           <Spacer />
           <Footer />
+          <FooterMobile />
       </>
     );
   }

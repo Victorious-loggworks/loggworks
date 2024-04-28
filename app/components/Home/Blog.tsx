@@ -2,14 +2,14 @@ import Image from "next/image";
 
 export default function Blog() {
   return (
-    <div className="px-20 container">
+    <div className="px-5 lg:px-20 container">
       <div className="">
-        <h2 className="text-[40px] font-bold text-gray-10 mb-4">Our Blog</h2>
-        <div className="text-gray-10">
-          <span className="bg-gray-90 py-3 px-4 rounded-full mr-3">
+        <h2 className="text-2xl lg:text-[2.5rem] font-semibold lg:font-bold text-gray-10 mb-4">Our Blog</h2>
+        <div className="text-gray-10 flex flex-wrap gap-3 text-[14px] lg:text-base">
+          <span className="bg-gray-90 py-3 px-4 rounded-full">
             For Consumers
           </span>
-          <span className="bg-gray-90 py-3 px-4 rounded-full mr-3">
+          <span className="bg-gray-90 py-3 px-4 rounded-full">
             For Professionals
           </span>
           <span className="bg-gray-90 py-3 px-4 rounded-full">
@@ -17,7 +17,7 @@ export default function Blog() {
           </span>
         </div>
 
-        <div className="grid grid-cols-3 gap-6 mt-12">
+        <div className="grid lg:grid-cols-3 gap-6 mt-12">
           <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
             <Image
               src={"/assets/blog/image-1.webp"}

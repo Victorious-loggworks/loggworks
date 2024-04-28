@@ -13,11 +13,11 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function Testimonial() {
     return (
-        <div className="bg-primary-90 lg:bg-transparent">
+        <div className="bg-white">
             <div className="container px-5 lg:px-20">
-                <div className="text-center">
-                    <h2 className="text-2xl lg:text-[40px] font-bold mb-4 text-gray-10">Join thousand of satisfied Customers</h2>
-                    <p className="text-xl text-gray-30">Hear what customers have to say about Loggworks.</p>
+                <div className="lg:text-center">
+                    <h2 className="text-2xl lg:text-[2.5rem] font-semibold lg:font-bold mb-4 text-gray-10">Join thousand of satisfied Customers</h2>
+                    <p className="text-base lg:text-xl text-gray-30">Hear what customers have to say about Loggworks.</p>
                 </div>
 
                 {/* DESKTOP VIEW */}
@@ -64,7 +64,7 @@ export default function Testimonial() {
                 </div>
 
                 {/* MOBILE VIEW */}
-                <div className=" mt-12 lg:hidden">
+                <div className="mt-12 lg:hidden">
                     <Swiper
                         effect={"coverflow"}
                         grabCursor={true}
@@ -85,7 +85,7 @@ export default function Testimonial() {
                     >
                         {data.map((testimonial, id) => (
                             <SwiperSlide key={testimonial.id} className="pb-4">
-                                <div className="p-5 flex flex-col justify-between bg-white rounded-lg w-full h-[236px]">
+                                <div className="p-5 flex flex-col justify-between bg-primary-90 rounded-lg w-full h-[236px]">
                                     <p className="mb-3">{testimonial.message}</p>
                                     <div className="flex gap-2 items-center rounded-lg">
                                         <Image src={testimonial.avatar} alt="image showing sign up" className="rounded-full" width={32} height={32} />
@@ -105,15 +105,6 @@ export default function Testimonial() {
                         </div>
                         <div className="swiper-pagination swiper-pagination-mobile"></div>
                     </Swiper>
-
-                    <div className="flex items-center flex-col mt-16">
-                        {/* <Image src={trustpilot} alt="trust pilot review" className="mx-auto" width={170} height={70} /> */}
-
-                        <div className="flex justify-between mt-2 divide-x divide-gray-500">
-                            <p className="text-[11px] px-1 ">Trustscore <span className="font-semibold">4.5</span></p>
-                            <p className="text-[11px] px-1"><span className="font-semibold">15,203</span> reviews</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
