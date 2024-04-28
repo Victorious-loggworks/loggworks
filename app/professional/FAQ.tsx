@@ -80,7 +80,7 @@ export default function FAQs() {
               value="item-4"
               className="bg-gray-90 border-none p-8 rounded-[6px]"
             >
-              <AccordionTrigger className="text-xl hover:no-underline py-0">
+              <AccordionTrigger className="text-xl text hover:no-underline py-0">
                 Do you vet service professionals who sign up on Loggworks
               </AccordionTrigger>
               <AccordionContent className="text-[1.125rem] mt-6 pb-0 leading-7">

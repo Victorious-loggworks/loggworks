@@ -5,7 +5,7 @@ export default function Operations() {
     const defaultValue = "0";
 
   return (
-    <div className="container px-10">
+    <div className="container px-5 lg:px-20">
       <div className="text-center">
         <p className="text-primary-20 font-semibold uppercase text-[20px] mb-4">FOR PROFESSIONALS</p>
         <h2 className="text-2xl lg:text-[40px] font-bold mb-4 text-gray-10">
@@ -15,9 +15,9 @@ export default function Operations() {
           Transform Your Home Service Business with Loggworks
         </p>
       </div>
-      <div className="mt-16 flex gap-8">
-        <div className="w-[713px] h-[815px] bg-gray-200 rounded-lg "></div>
-        <main className="flex flex-col mb-10 w-[40%] pl-8">
+      <div className="mt-16 flex flex-col lg:flex-row gap-8">
+        <div className="w-full lg:w-[713px] h-[388px] lg:h-[815px] bg-gray-200 rounded-lg "></div>
+        <main className="flex flex-col mb-10 lg:w-[40%] pl-8">
                 <Accordian value={defaultValue} className="">
                     <AccordianItem value="1" trigger="Efficient Job Management" imageName="icon-1.svg">
                         <h4 className="text-[32px] font-bold mt-2 text-gray-10 text-opacity-90">Streamline Operations</h4>

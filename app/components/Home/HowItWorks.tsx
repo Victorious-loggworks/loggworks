@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function HowItWorks() {
     return (
-        <div className="px-20 container">
+        <div className="px-5 lg:px-20 container">
             <div className="w-full h-[1026px] flex justify-center">
                 <div className="relative flex w-fit rounded-lg overflow-hidden">
                     <Image src="/assets/how-it-works.png" alt="" width="1240" height="0" className="w-full h-auto" />

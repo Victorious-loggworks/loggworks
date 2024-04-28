@@ -21,7 +21,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="bg-white shadow-sm">
+    <header className="bg-white shadow-sm hidden lg:block">
       <nav className="container px-10">
         <div className="flex justify-between items-center py-2">
           <Link

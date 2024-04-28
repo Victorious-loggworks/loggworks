@@ -47,9 +47,9 @@ export default function Popular() {
     return (
         <div className="">
             <div className="container px-5 lg:px-20 pt-10 pb-12">
-                <h2 className="text-xl lg:text-[32px] font-bold text-black">Popular Services</h2>
+                <h2 className="text-2xl lg:text-[32px] font-bold text-black">Popular Services</h2>
 
-                <div className="grid grid-cols-4 gap-8 mt-8 lg:mt-12">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 mt-8 lg:mt-12">
                     {imageList.map((image) => (
                         <div key={image.id} className="relative flex w-fit rounded-lg overflow-hidden">
                             <Image src={image.src} alt={image.name} width={292} height={344} />

@@ -12,6 +12,7 @@ import Blog from "./Blog";
 import BottomBanner from "./BottomBanner";
 import Footer from "./Footer";
 import Operations from "./Operations";
+// import StepsTwo from "./StepsTwo";
 
 export default function HomePage() {
     return (
@@ -22,6 +23,7 @@ export default function HomePage() {
           <Spacer />
         <Client />
           <Spacer />
+          {/* <StepsTwo /> */}
         <Steps />
           <Spacer />
         <Popular />
