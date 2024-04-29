@@ -8,14 +8,14 @@ export default function Banner() {
     <div className="">
       <div className="container px-5 lg:px-20">
         <div className="grid grid-rows-4 grid-cols-4 gap-5">
-          <div className="row-span-2 lg:row-span-4 col-span-4 lg:col-span-2 lg:h-[968px] rounded-[8px] overflow-hidden bg-gray-10 bg-opacity-90 place-content-center px-6 lg:px-20 py-6">
+          <div className="row-span-2 lg:row-span-4 col-span-4 lg:col-span-2 lg:h-[968px] rounded-[8px] overflow-hidden bg-gray-10 bg-opacity-90 place-content-center px-6 md:px-20 py-6">
             <div className="">
-              <h2 className="capitalize text-xl lg:text-[32px] leading-[30px] lg:leading-[38.4px] font-bold text-white mb-2 lg:mb-4">
+              <h2 className="capitalize text-xl md:text-[32px] leading-[30px] md:leading-[38.4px] font-bold text-white mb-2 lg:mb-4">
                 A community of
                 <br />
                 diverse professionals
               </h2>
-              <p className="text-gray-70 text-sm lg:text-xl">
+              <p className="text-gray-70 text-sm md:text-xl max-w-lg">
                 Create a free profile and dive into a vast pool of service jobs
                 without any charges. Pay commission only when job is completed.
               </p>
