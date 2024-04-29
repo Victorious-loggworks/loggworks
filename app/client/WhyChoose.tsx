@@ -18,8 +18,8 @@ export default function WhyChoose() {
         Expert Home Services—Guaranteed
       </p>
 
-      <div className="mt-8 lg:mt-[4.5rem] grid grid-cols-1 lg:grid-cols-4 gap-6">
-        <div className="col-span-4 flex flex-col-reverse lg:flex-row justify-between items-center rounded-[8px] overflow-hidden shadow-md px-4 lg:px-0 py-4 lg:py-0 gap-4">
+      <div className="mt-8 lg:mt-[4.5rem] grid grid-cols-1 lg:grid-cols-4 gap-6 pb-4">
+        <div className="col-span-4 flex flex-col-reverse lg:flex-row justify-between items-center rounded-[8px] overflow-hidden shadow-lg px-4 lg:px-0 py-4 lg:py-0 gap-4">
           <div className="lg:w-[40%] lg:px-10 bg-white">
             <h4 className="text-xl lg:text-2xl text-gray-10 text-opacity-90 font-bold leading-7">
               Privacy Protection
@@ -83,7 +83,7 @@ export default function WhyChoose() {
             </p>
           </div>
         </div>
-        <div className="col-span-4 flex flex-col-reverse lg:flex-row-reverse justify-between items-center rounded-[8px] overflow-hidden shadow-md px-4 lg:px-0 py-4 lg:py-0">
+        <div className="col-span-4 flex flex-col-reverse lg:flex-row-reverse justify-between items-center rounded-[8px] overflow-hidden shadow-lg px-4 lg:px-0 py-4 lg:py-0">
           <div className="lg:w-[40%] bg-white lg:px-10 mt-4">
             <h4 className="text-xl lg:text-2xl text-gray-10 text-opacity-90 font-bold leading-7">
               Payment Protection

@@ -54,8 +54,8 @@ export default function HeroSection() {
         </div>
         <WhyChoose />
       </div>
-      <div className="hidden w-[365px] h-[365px] bg-primary-20 absolute -top-[10%] -left-[10%] rounded-full -z-40 blur-[350px]"></div>
-      <div className="w-[200px] lg:w-[465px] h-[200px] lg:h-[465px] bg-primary-20 absolute top-[15%] -right-[10%] rounded-full -z-40 blur-[350px]"></div>
+      <div className="w-[365px] h-[365px] bg-primary-20 absolute -top-[10%] -left-[10%] rounded-full -z-40 blur-[350px]"></div>
+      <div className="w-[365px] h-[365px] bg-primary-20 absolute top-[15%] -right-[10%] rounded-full -z-40 blur-[350px]"></div>
     </div>
   );
 }

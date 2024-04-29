@@ -9,9 +9,9 @@ export default function Categories() {
           Explore services by categories
         </h1>
       {/* </div> */}
-      <div className="grid grid-cols-4 gap-6 rounded-md mt-[4.5rem]">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-[4.5rem]">
         {categories.map((category) => (
-            <div key={category.id} className="bg-gray-90 p-6 flex items-center gap-4 font-medium">
+            <div key={category.id} className="bg-gray-90 p-6 flex items-center gap-4 font-medium rounded-lg">
                 <Image src={category.src} alt={"category icon"} width={32} height={32} />
                 <span>{category.name}</span>
             </div>
