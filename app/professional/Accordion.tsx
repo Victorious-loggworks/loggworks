@@ -79,10 +79,10 @@ export function AccordianItem({
       <header
         role="button"
         onClick={() => setSelected(open ? null : value)}
-        className={`flex gap-3 items-center py-10 ${
+        className={`flex gap-3 items-center font-medium capitalize text-[12px] lg:text-[1.25rem] ${
           open
-            ? " text-xl text-primary-20 font-medium"
-            : "text-gray-40 text-[20px] font-medium capitalize"
+            ? " text-primary-20 py-2 lg:py-10"
+            : "text-gray-40 py-6 lg:py-10"
         }`}
       >
         {trigger}

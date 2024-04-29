@@ -17,7 +17,7 @@ export default function Blog() {
           </span>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-6 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
           <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
             <Image
               src={"/assets/blog/image-1.webp"}

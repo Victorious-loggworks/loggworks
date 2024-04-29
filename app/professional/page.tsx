@@ -7,6 +7,7 @@ import WhyChoose from "./WhyChoose";
 import FAQs from "./FAQ";
 import Blog from "../components/Home/Blog";
 import Footer from "../components/Home/Footer";
+import FooterMobile from "../components/Home/MobileFooter";
 
 export default function ProfessionalPage() {
   return (
@@ -25,6 +26,7 @@ export default function ProfessionalPage() {
       <Blog />
       <Spacer />
       <Footer />
+      <FooterMobile />
     </div>
   );
 }
