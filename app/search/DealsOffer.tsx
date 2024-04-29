@@ -31,11 +31,11 @@ const SearchList = [
 
 export default function DealsOffer() {
   return (
-    <div className="container px-20">
+    <div className="container px-5 lg:px-20">
       <div className="flex items-center gap-3 mt-16">
         <h3 className="text-black text-xl font-semibold">Deals and offer</h3>
       </div>
-      <div className="grid grid-cols-3 gap-6 my-12">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6 my-12">
         {SearchList.map((searchCard) => (
           <div
             key={searchCard.id}
@@ -56,8 +56,9 @@ export default function DealsOffer() {
                     alt="Professional worker logo"
                     width={26}
                     height={26}
+                    className="w-4 h-4 lg:h-[26px] lg:w-[26px]"
                   />
-                  <h5 className="text-gray-0 text-base font-semibold">
+                  <h5 className="text-gray-0 10.807px lg:text-base font-semibold">
                     Dyson Electricals
                   </h5>
                 </div>

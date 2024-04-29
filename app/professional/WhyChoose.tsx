@@ -18,7 +18,7 @@ export default function WhyChoose() {
             <h4 className="text-xl lg:text-2xl text-gray-10 text-opacity-90 font-bold leading-7">
               Profile and Offers Promotion
             </h4>
-            <p className="text-gray-30 text-sm lg:base text-opacity-90 font-mediumn leading-6 mt-2">
+            <p className="text-gray-30 text-sm lg:text-base text-opacity-90 font-mediumn leading-6 mt-2">
               Maximise your reach and attract the right clients by promoting
               your professional profile and special offers through Loggworks.
               Designed as a promotional tool, it acts like targeted advertising,
@@ -36,7 +36,7 @@ export default function WhyChoose() {
             <h4 className="text-xl lg:text-2xl text-gray-10 text-opacity-90 font-bold leading-7">
               Efficient and Courteous Support
             </h4>
-            <p className="text-gray-30  text-sm lg:base text-opacity-90 font-mediumn leading-6 mt-2">
+            <p className="text-gray-30  text-sm lg:text-base text-opacity-90 font-mediumn leading-6 mt-2">
               Our feature lets you quickly submit quotes for new jobs,
               streamlining the process and significantly boosting your chances
               of securing opportunities.
@@ -47,7 +47,7 @@ export default function WhyChoose() {
             <h4 className="text-xl lg:text-2xl text-gray-10 text-opacity-90 font-bold leading-7">
               Escrow Service
             </h4>
-            <p className="text-gray-30 text-sm lg:base text-opacity-90 font-mediumn leading-6 mt-2">
+            <p className="text-gray-30 text-sm lg:text-base text-opacity-90 font-mediumn leading-6 mt-2">
               Loggwork provides an integrated escrow service to safeguard
               transactions and protect professionals from payment disputes.
               Funds are securely held until jobs are completed, ensuring peace
@@ -62,7 +62,7 @@ export default function WhyChoose() {
             <h4 className="text-xl lg:text-2xl text-gray-10 text-opacity-90 font-bold leading-7">
               Quick and Efficient Quoting
             </h4>
-            <p className="text-gray-30 text-sm lg:base text-opacity-90 font-mediumn leading-6 mt-2">
+            <p className="text-gray-30 text-sm lg:text-base text-opacity-90 font-mediumn leading-6 mt-2">
               Our feature lets you quickly submit quotes for new jobs,
               streamlining the process and significantly boosting your chances
               of securing opportunities
@@ -73,7 +73,7 @@ export default function WhyChoose() {
             <h4 className="text-xl lg:text-2xl text-gray-10 text-opacity-90 font-bold leading-7">
               Pricing Autonomy
             </h4>
-            <p className="text-gray-30 text-sm lg:base text-opacity-90 font-mediumn leading-6 mt-2">
+            <p className="text-gray-30 text-sm lg:text-base text-opacity-90 font-mediumn leading-6 mt-2">
               Enjoy the freedom to set your rates by selecting from various job
               listings that match your financial goals and schedule. This
               autonomy allows you to strategically optimise your income while
@@ -86,7 +86,7 @@ export default function WhyChoose() {
             <h4 className="text-xl lg:text-2xl text-gray-10 text-opacity-90 font-bold leading-7">
               Advanced Analytics and Insights
             </h4>
-            <p className="text-gray-30 text-sm lg:base text-opacity-90 font-mediumn leading-6 mt-2">
+            <p className="text-gray-30 text-sm lg:text-base text-opacity-90 font-mediumn leading-6 mt-2">
               The Loggworks CRM dashboard offers advanced analytics and
               insights, enabling you to monitor and manage your performance
               effectively. With data at your fingertips, you can adjust your

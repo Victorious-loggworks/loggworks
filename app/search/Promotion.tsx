@@ -31,12 +31,12 @@ const SearchList = [
 
 export default function Promotion() {
   return (
-    <div className="container px-20">
+    <div className="container px-5 lg:px-20">
       <div className="flex items-center gap-3 mt-16">
-        <h3 className="text-black text-xl font-semibold">Promotions</h3>
-        <span className="text-white bg-[#E2B801] px-1 rounded-sm">Ads</span>
+        <h3 className="text-black text-base lg:text-xl font-semibold">Promotions</h3>
+        <span className="text-white text-[12px] bg-[#E2B801] px-1 rounded-sm">Ads</span>
       </div>
-      <div className="grid grid-cols-3 gap-6 my-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-12">
         {SearchList.map((searchCard) => (
           <div
             key={searchCard.id}
