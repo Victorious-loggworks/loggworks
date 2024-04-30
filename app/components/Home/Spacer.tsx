@@ -1,5 +1,5 @@
 export default function Spacer() {
     return (
-        <div className="lg:h-[144px] h-10 w-full"></div>
+        <div className="lg:h-[144px] h-12 w-full"></div>
     )
 };

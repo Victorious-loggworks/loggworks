@@ -49,6 +49,7 @@ export default function HeroSection() {
               height={568}
               width={609}
               className="border border-gray-200 rounded-[8px]"
+              priority = {true}
             />
           </div>
         </div>
