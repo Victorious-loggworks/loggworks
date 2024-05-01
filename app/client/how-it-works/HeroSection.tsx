@@ -8,14 +8,14 @@ export default function HeroSection() {
     <div className="container px-5 lg:px-20">
       <div className="py-[8rem]">
         <div className="">
-          <h2 className="text-primary-20 text-[12px] lg:text-xl uppercase text-left lg:text-center font-normal lg:font-semibold">
+          <h2 className="text-primary-20 text-[12px] lg:text-xl uppercase text-center font-normal lg:font-semibold">
           HOW IT WORKS
           </h2>
-          <p className="text-left lg:text-center text-gray-10 text-2xl lg:text-[2.5rem] font-bold leading-8 lg:leading-[48px] capitalize mt-2 lg:mt-6">
+          <p className="text-center text-gray-10 text-2xl lg:text-[2.5rem] font-bold leading-8 lg:leading-[48px] capitalize mt-2 lg:mt-6">
           Find reliable home service <br />professionals without the fuss
 
           </p>
-          <p className="text-base lg:text-xl lg:text-center mt-4 text-gray-30">
+          <p className="text-base lg:text-xl text-center mt-4 text-gray-30">
           Whether you are searching for a plumber or a childcare provider, <br />Loggworks allows you to stay in control of your bookings.
           </p>
         </div>
