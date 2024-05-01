@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Banner() {
   return (
     <div className="container px-5 lg:px-20">
-      <div className="flex flex-col gap-6 lg:flex-row items-center rounded-xl overflow-hidden bg-[#2E2E2E] lg:h-[464px] p-6 lg:p-0">
+      <div className="flex flex-col gap-6 lg:flex-row items-center rounded-xl overflow-hidden bg-[#2E2E2E] h-[480px] lg:h-[464px] p-6 lg:p-0">
         <div className="lg:flex-1 px-5 lg:pl-24">
           <div className="">
             <h2 className="text-xl lg:text-[32px] leading-[1.875rem] lg:leading-[38.4px] font-bold text-white mb-4">
@@ -58,15 +58,17 @@ export default function Banner() {
           </div>
         </div>
 
-        <div className="relative lg:w-1/2">
-          <div className="absolute lg:right-72 lg:top-20">
+        <div className="relative lg:w-1/2 h-[200px] lg:h-full">
+          <div className="absolute lg:right-72 lg:top-20 w-fit">
             <Image
               src={MobileOne}
               alt="phone app image"
+              width={435}
+              height={786}
               className="lg:w-[350px]"
             />
           </div>
-          <div className="absolute lg:top-4 lg:right-20 w-fit">
+          <div className="absolute lg:top-10 lg:right-20 w-fit">
             <Image
               src={MobileTwo}
               alt="phone app image"

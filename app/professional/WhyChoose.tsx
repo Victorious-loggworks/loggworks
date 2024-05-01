@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function WhyChoose() {
   return (
     <div className="container px-5 lg:px-20">
@@ -14,7 +16,13 @@ export default function WhyChoose() {
       <div className="mt-8 lg:mt-[4.5rem] grid grid-cols-2 md:grid-cols-4 gap-6">
         <div className="col-span-2 flex flex-col gap-6">
           <div className="col-span-2 p-4 lg:p-10 rounded-[8px] shadow-lg border-2 border-gray-600 border-opacity-5">
-            <div className="w-full h-[320px] rounded-md bg-gray-300 mb-8"></div>
+            <Image
+              src={"/assets/why-choose-loggworks/Profile-Promotion.webp"}
+              alt={"profile promotion"}
+              width={1056}
+              height={641}
+              className="w-full mb-8"
+            />
             <h4 className="text-xl lg:text-2xl text-gray-10 text-opacity-90 font-bold leading-7">
               Profile and Offers Promotion
             </h4>
@@ -32,7 +40,15 @@ export default function WhyChoose() {
             </p>
           </div>
           <div className="col-span-2 p-4 lg:p-10 rounded-[8px] shadow-lg border-2 border-gray-600 border-opacity-5">
-            <div className="w-full h-[311px] lg:h-[528px] rounded-md bg-gray-300 mb-8"></div>
+            <Image
+              src={
+                "/assets/why-choose-loggworks/Efficient-and-Courteous-Support.webp"
+              }
+              alt={"efficient and courtesy support"}
+              width={1056}
+              height={1057}
+              className="w-full mb-8"
+            />
             <h4 className="text-xl lg:text-2xl text-gray-10 text-opacity-90 font-bold leading-7">
               Efficient and Courteous Support
             </h4>
@@ -43,7 +59,13 @@ export default function WhyChoose() {
             </p>
           </div>
           <div className="col-span-2 p-4 lg:p-10 rounded-[8px] shadow-lg border-2 border-gray-600 border-opacity-5">
-            <div className="w-full h-[320px] rounded-md bg-gray-300 mb-8"></div>
+            <Image
+              src={"/assets/why-choose-loggworks/Escrow-Service.webp"}
+              alt={"escrow service"}
+              width={1056}
+              height={641}
+              className="w-full mb-8"
+            />
             <h4 className="text-xl lg:text-2xl text-gray-10 text-opacity-90 font-bold leading-7">
               Escrow Service
             </h4>
@@ -58,7 +80,15 @@ export default function WhyChoose() {
 
         <div className="col-span-2 flex flex-col gap-6">
           <div className="col-span-2 p-4 lg:p-10 rounded-[8px] shadow-lg border-2 border-gray-600 border-opacity-5">
-            <div className="w-full h-[304px] lg:h-[504px] rounded-md bg-gray-300 mb-8"></div>
+            <Image
+              src={
+                "/assets/why-choose-loggworks/Quick-and-Efficient-Quoting.webp"
+              }
+              alt={"quick and efficient quoting"}
+              width={1057}
+              height={1009}
+              className="w-full mb-8"
+            />
             <h4 className="text-xl lg:text-2xl text-gray-10 text-opacity-90 font-bold leading-7">
               Quick and Efficient Quoting
             </h4>
@@ -69,7 +99,13 @@ export default function WhyChoose() {
             </p>
           </div>
           <div className="col-span-2 p-4 lg:p-10 rounded-[8px] shadow-lg border-2 border-gray-600 border-opacity-5">
-            <div className="w-full h-[320px] rounded-md bg-gray-300 mb-8"></div>
+            <Image
+              src={"/assets/why-choose-loggworks/Pricing-Autonomy.webp"}
+              alt={"pricing autonomy"}
+              width={1056}
+              height={641}
+              className="w-full mb-8"
+            />
             <h4 className="text-xl lg:text-2xl text-gray-10 text-opacity-90 font-bold leading-7">
               Pricing Autonomy
             </h4>
@@ -82,7 +118,7 @@ export default function WhyChoose() {
             </p>
           </div>
           <div className="col-span-2 p-4 lg:p-10 rounded-[8px] shadow-lg border-2 border-gray-600 border-opacity-5">
-            <div className="w-full h-[240px] lg:h-[416px] rounded-md bg-gray-300 mb-8"></div>
+          <Image src={"/assets/why-choose-loggworks/Advanced-Analytics-and-Insights.webp"} alt={"advanced analytics and insights"} width={1056} height={833} className="w-full mb-8" />
             <h4 className="text-xl lg:text-2xl text-gray-10 text-opacity-90 font-bold leading-7">
               Advanced Analytics and Insights
             </h4>

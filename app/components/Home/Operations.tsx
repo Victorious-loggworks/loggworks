@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Accordian, { AccordianItem } from "./Accordion";
 
 export default function Operations() {
@@ -16,7 +17,9 @@ export default function Operations() {
         </p>
       </div>
       <div className="mt-16 flex flex-col lg:flex-row gap-8">
-        <div className="w-full lg:w-[713px] h-[388px] lg:h-[815px] bg-gray-200 rounded-lg "></div>
+        <div className="w-full lg:w-[60%] h-full rounded-lg flex justify-center items-center ">
+          <Image src={"/assets/streamline-operations.webp"} alt={"streamline operations"} width={1513} height={1916} className="w-full" />
+        </div>
         <main className="flex flex-col mb-10 lg:w-[40%] lg:pl-8">
                 <Accordian value={defaultValue} className="">
                     <AccordianItem value="1" trigger="Efficient Job Management" imageName="icon-1.svg">
