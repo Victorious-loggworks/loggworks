@@ -1,17 +1,23 @@
 import Accordian, { AccordianItem } from "./Accordion";
+import Image from "next/image";
 
 export default function Operations() {
   const defaultValue = "0";
 
   return (
     <div className="mt-8 lg:mt-16 flex flex-col-reverse lg:flex-row-reverse gap-8">
-      <div className="w-full lg:w-[713px] h-[400px] lg:h-[655px] bg-gray-200 rounded-lg "></div>
+      <div className="w-full lg:w-[713px] h-[400px] lg:h-[655px] overflow-hidden bg-slate-200 rounded-lg ">
+        <Image
+          src={"/assets/why-choose-loggworks/showcase-your-expertise.webp"}
+          alt={"showcase your expertise"}
+          width={1465}
+          height={1380}
+          className="h-full w-full"
+        />
+      </div>
       <main className="flex flex-col mb-10 lg:w-[40%] lg:pr-8">
         <Accordian value={defaultValue} className="">
-          <AccordianItem
-            value="1"
-            trigger="1. Create Your Profile"
-          >
+          <AccordianItem value="1" trigger="1. Create Your Profile">
             <h4 className="text-2xl lg:text-[2rem] font-semibold lg:font-bold mt-2 text-gray-10 text-opacity-90">
               Showcase Your Expertise
             </h4>
@@ -22,10 +28,7 @@ export default function Operations() {
             </p>
           </AccordianItem>
 
-          <AccordianItem
-            value="2"
-            trigger="2. Customers Job Requests"
-          >
+          <AccordianItem value="2" trigger="2. Customers Job Requests">
             <h4 className="text-2xl lg:text-[2rem] font-bold text-gray-10 text-opacity-90">
               Streamline Operations
             </h4>
@@ -36,10 +39,7 @@ export default function Operations() {
             </p>
           </AccordianItem>
 
-          <AccordianItem
-            value="3"
-            trigger="3. Quote And Invoice"
-          >
+          <AccordianItem value="3" trigger="3. Quote And Invoice">
             <h4 className="text-2xl lg:text-[2rem] font-bold text-gray-10 text-opacity-90">
               Streamline Operations
             </h4>
@@ -50,10 +50,7 @@ export default function Operations() {
             </p>
           </AccordianItem>
 
-          <AccordianItem
-            value="4"
-            trigger="4. Completion and Payment"
-          >
+          <AccordianItem value="4" trigger="4. Completion and Payment">
             <h4 className="text-2xl lg:text-[2rem] font-bold text-gray-10 text-opacity-90">
               Streamline Operations
             </h4>
@@ -63,7 +60,6 @@ export default function Operations() {
               Loggworks.
             </p>
           </AccordianItem>
-
         </Accordian>
       </main>
     </div>

@@ -95,11 +95,11 @@ export default function Navbar() {
             </Button>
           </div>
         </div>
-
+{/* 
         {activeMenu === "menuItem1" && <ClientDropDown />}
 
         {activeMenu === "menuItem2" && <ProfessionalDropDown />}
-        {activeMenu === "menuItem3" && <ResourcesDropDown />}
+        {activeMenu === "menuItem3" && <ResourcesDropDown />} */}
       </nav>
     </header>
   );
