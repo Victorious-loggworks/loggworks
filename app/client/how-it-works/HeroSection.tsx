@@ -7,7 +7,7 @@ export default function HeroSection() {
   return (
     <div className="container px-5 lg:px-20">
       <div className="py-[8rem]">
-        <div className="">
+        <div className="flex flex-col items-center">
           <h2 className="text-primary-20 text-[12px] lg:text-xl uppercase text-center font-normal lg:font-semibold">
           HOW IT WORKS
           </h2>
@@ -15,8 +15,8 @@ export default function HeroSection() {
           Find reliable home service <br />professionals without the fuss
 
           </p>
-          <p className="text-base lg:text-xl text-center mt-4 text-gray-30">
-          Whether you are searching for a plumber or a childcare provider, <br />Loggworks allows you to stay in control of your bookings.
+          <p className="text-base lg:text-xl text-center mt-4 max-w-2xl text-gray-30">
+          Whether you are searching for a plumber or a childcare provider, Loggworks allows you to stay in control of your bookings.
           </p>
         </div>
       </div>
