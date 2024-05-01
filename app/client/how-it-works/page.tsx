@@ -7,7 +7,7 @@ import Footer from "@/app/components/Home/Footer";
 import FooterMobile from "@/app/components/Home/MobileFooter";
 import Navbar from "@/app/components/Home/Navbar";
 
-export default function() {
+export default function HowItWorksPage() {
     return (
         <div>
             <Navbar />
